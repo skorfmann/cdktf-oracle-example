@@ -1,0 +1,30 @@
+{
+  "name": "oracle",
+  "version": "1.0.0",
+  "main": "main.js",
+  "types": "main.ts",
+  "license": "MPL-2.0",
+  "private": true,
+  "scripts": {
+    "get": "cdktf get",
+    "build": "yarn get && tsc",
+    "synth": "cdktf synth",
+    "compile": "tsc --pretty",
+    "watch": "tsc -w",
+    "test": "echo ok",
+    "upgrade": "npm i cdktf@latest cdktf-cli@latest",
+    "upgrade:next": "npm i cdktf@next cdktf-cli@next"
+  },
+  "engines": {
+    "node": ">=10.12"
+  },
+  "dependencies": {
+    "cdktf": "0.0.13-pre.2f0b966cb25b6dc5066ee1551fdb32ff47a9c0fd",
+    "constructs": "^3.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.27",
+    "cdktf-cli": "0.0.13-pre.2f0b966cb25b6dc5066ee1551fdb32ff47a9c0fd",
+    "typescript": "^3.9.7"
+  }
+}

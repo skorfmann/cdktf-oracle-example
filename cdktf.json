@@ -1,0 +1,8 @@
+{
+  "language": "typescript",
+  "app": "npm run --silent compile && node main.js",
+  "terraformProviders": [
+    "oci@~> 3.0"
+  ],
+  "codeMakerOutput": "imports"
+}
